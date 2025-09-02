@@ -13,7 +13,7 @@ class EstudiantesAPITests(APITestCase):
             apellido_paterno_est="API",
             apellido_materno_est="REST",
             email_est="Django@gmail.com",
-            nota_est=85.0
+            nota_est=14.0
         )
 
         # URL para listar y crear estudiantes
@@ -29,7 +29,7 @@ class EstudiantesAPITests(APITestCase):
             "apellido_paterno_est": "Test",
             "apellido_materno_est": "Tests",
             "email_est": "test@gmail.com",
-            "nota_est": 20
+            "nota_est": 20.0
         }
 
         response = self.client.post(self.list_url, data, format='json')
@@ -52,25 +52,25 @@ class EstudiantesAPITests(APITestCase):
     def test_update_estudiante(self):
         # Prueba una actualización completa (PUT) del estudiante
         data = {
-            "nombre_est": "Django Editado",
+            "nombre_est": "DjangoRest",
             "apellido_paterno_est": "API",
             "apellido_materno_est": "REST",
             "email_est": "Django@gmail.com",  # Mismo email
-            "nota_est": 15
+            "nota_est": 15.0
         }
 
         response = self.client.put(self.detail_url(self.estudiante.id), data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.estudiante.refresh_from_db()
-        self.assertEqual(self.estudiante.nota_est, 15)
+        self.assertEqual(self.estudiante.nota_est, 15.0)
 
     def test_partial_update_estudiante(self):
         # Prueba una actualización parcial (PATCH), modificando solo un campo
-        data = {"nota_est": 12}
+        data = {"nota_est": 12.0}
         response = self.client.patch(self.detail_url(self.estudiante.id), data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.estudiante.refresh_from_db()
-        self.assertEqual(self.estudiante.nota_est, 12)
+        self.assertEqual(self.estudiante.nota_est, 12.0)
 
     def test_delete_estudiante(self):
         # Prueba la eliminación de un estudiante con DELETE
@@ -85,7 +85,7 @@ class EstudiantesAPITests(APITestCase):
             "apellido_paterno_est": "Apellido1",
             "apellido_materno_est": "Apellido2",
             "email_est": "Django@gmail.com",  # Email duplicado
-            "nota_est": 70.0
+            "nota_est": 18.0
         }
 
         response = self.client.post(self.list_url, data, format='json')
