@@ -1,9 +1,9 @@
 from django.db import models
 
 class Estudiantes(models.Model):
-    nombre_est = models.TextField(null=False)
-    apellido_paterno_est = models.TextField(null=False)
-    apellido_materno_est = models.TextField(null=False)
+    nombre_est = models.CharField(max_length=100, null=False)
+    apellido_paterno_est = models.CharField(max_length=100, null=False)
+    apellido_materno_est = models.CharField(max_length=100, null=False)
     email_est = models.EmailField(unique=True, null=False)
     nota_est = models.FloatField(null=False)
 
