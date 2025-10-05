@@ -1,112 +1,135 @@
 <div align="center">
 
-# 🎓 MemberCrud – Gestión de Estudiantes  
+# 💝 Best Friend – Dedicatoria Interactiva  
 
 <p>
   <img src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Vite-4.x-646CFF?logo=vite&logoColor=white&style=for-the-badge" />
   <img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Django-4.x-092E20?logo=django&logoColor=white&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/SQLite-3-003B57?logo=sqlite&logoColor=white&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/CSS-Modules-1572B6?logo=css3&logoColor=white&style=for-the-badge" />
 </p>
 
 </div>
 
 ---
 
-## 👥 Equipo de Desarrollo (SCRUM)
+## 💬 Dedicado a mi mejor amiga **Eunice** 💫  
 
-| Rol | Integrante |
-|-----|------------|
-| Scrum Master | Kassandra Castro |
-| Product Owner | Leonardo Huaracha |
-| Frontend | Diego Saravia<br>Leonardo Huaracha |
-| Backend | Fabiano Anticona<br>Jared Fernandez |
+> "Esta página está hecha con mucho cariño, como un regalo digital lleno de recuerdos, risas y amistad.  
+> Gracias por ser una persona tan especial, por tu alegría constante y por acompañarme en cada etapa.  
+> Cada imagen, cada detalle y cada palabra son una pequeña muestra de lo mucho que te aprecio.  
+> 💐 ¡Feliz cumpleaños, mi mejor amiga del alma! 💖"
 
 ---
 
-## 📖 Descripción  
+## 🖥️ Descripción del Proyecto  
 
-**MemberCrud** es una aplicación **Full Stack** que permite la **gestión completa de estudiantes** mediante operaciones CRUD (Crear, Leer, Actualizar y Eliminar).  
+**Best Friend** es una aplicación web construida con **React + Vite**, creada como una **dedicatoria interactiva de cumpleaños**.  
+Presenta un carrusel de imágenes con frases personalizadas, animaciones suaves y una interfaz emocionalmente cálida.  
 
-El sistema está construido con un **frontend moderno en React** y un **backend robusto en Django REST Framework**, garantizando una experiencia rápida, escalable y fácil de usar.  
-
-Este proyecto fue desarrollado como práctica de integración **frontend + backend**, aplicando buenas prácticas de desarrollo, diagramación UML y control de versiones con Git y GitHub.  
+El objetivo del proyecto es combinar **tecnología y afecto**, demostrando cómo el desarrollo frontend también puede transmitir emociones y creatividad.
 
 ---
 
 ## ✨ Funcionalidades  
 
-✅ Registro de estudiantes con validación de datos.  
-✅ Edición de información en tiempo real.  
-✅ Eliminación de estudiantes con confirmación mediante modal.  
-✅ Listado dinámico y filtrado.  
-✅ Conexión **API REST** entre React y Django.  
+✅ Carrusel automático y manual de imágenes.  
+✅ Frases y recuerdos personalizados.  
+✅ Botón para pausar o reproducir la secuencia.  
+✅ Diseño responsivo y elegante.  
+✅ Integración con **Vercel** para despliegue.  
 
 ---
 
 ## 🛠️ Tecnologías Usadas  
 
-- **Frontend:** React + Vite  
-- **Estilos:** CSS modularizado  
-- **Backend:** Django + Django REST Framework  
-- **Base de Datos:** SQLite  
-- **Control de Versiones:** Git & GitHub  
+- ⚛️ **React 18**  
+- ⚡ **Vite**  
+- 🎨 **CSS Modularizado / Animaciones**  
+- 🌐 **Vercel (Hosting y Deploy)**  
 
 ---
 
-## 📊 Diagramas del Proyecto  
+## 🗂️ Estructura del Proyecto  
 
-### 🔹 Diagrama de Actividades  
-![Diagrama para Gestion de Estudiantes_page-0001](https://github.com/user-attachments/assets/ce76789c-6fbe-4437-9edc-5a1bc9010540)
-
-### 🔹 Diagrama de Clases (DCN)  
-![DCUN](https://github.com/user-attachments/assets/f32fcd4a-ebce-47da-b70e-2668a3131079)
-
----
-
-## 🚀 Instalación y Ejecución  
-
-### 🔧 Backend (Django)
-```bash
-# 1. Crear entorno virtual
-python -m venv venv
-
-# 2. Activar entorno
-# Linux / Mac
-source venv/bin/activate
-# Windows
-venv\Scripts\activate
-
-# 3. Instalar dependencias
-pip install -r requirements.txt
-
-# 4. Migrar la base de datos
-python manage.py migrate
-
-# 5. Levantar el servidor
-python manage.py runserver
+```
+BEST FRIEND/
+├── public/
+│   ├── images/
+│   │   ├── IMAGEN 1.jpeg
+│   │   ├── IMAGEN 2.jpeg
+│   │   └── ... IMAGEN 12.jpeg
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── ImageCarousel.jsx
+│   │   └── ImageCarousel.css
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+└── vite.config.js
 ```
 
-### 💻 Frontend (React + Vite)
-```bash
-# 1. Ir al directorio del frontend
-cd estudiantes-project
+---
 
-# 2. Instalar dependencias
+## 🎨 Esquema Visual de la Interfaz  
+
+```
++---------------------------------------------------+
+|                                                   |
+|              💕 BEST FRIEND 💕                    |
+|          [ ✕ ] Nuestros Recuerdos                |
+|                                                   |
+|       ‹  [   IMAGEN ACTUAL   ]  ›                |
+|          "Texto de la dedicatoria"               |
+|              (Contador: 3 / 12)                  |
+|                                                   |
+|         ● ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○                 |
+|                                                   |
+|              [⏸ Pausar]                          |
++---------------------------------------------------+
+```
+
+---
+
+## 🚀 Cómo Ejecutarlo en Local  
+
+```bash
+# 1️⃣ Clonar el repositorio
+git clone https://github.com/CHANKUN5/Happy-Birthday.git
+
+# 2️⃣ Entrar al proyecto
+cd Happy-Birthday
+
+# 3️⃣ Instalar dependencias
 npm install
 
-# 3. Levantar el servidor de desarrollo
+# 4️⃣ Ejecutar el proyecto
 npm run dev
 ```
 
 ---
 
+## 📦 Deploy en Vercel  
+
+Este proyecto está configurado para desplegarse automáticamente en **Vercel**.
+
+1. Conecta tu repositorio de GitHub con Vercel
+2. Vercel detectará automáticamente que es un proyecto Vite
+3. El deploy se realizará automáticamente con cada push a la rama principal
+
+---
+
+## 💝 Créditos  
+
+Desarrollado con ❤️ para **Eunice**  
+Por: **Kassandra Castro Huauya**
+
+---
+
 <div align="center">
 
-
-
-**Desarrollado con ❤️ por el equipo SALA 04**  
-*MemberCrud © 2025*
+**✨ Hecho con amor y código ✨**
 
 </div>
